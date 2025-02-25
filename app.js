@@ -214,3 +214,5 @@
 // }
 
 // document.write("Text: The quick brown fox jumps over the lazy dog" + "<br />" + "There are " + count + " occurence(s) of the word 'the'");
+
+// X ------------------------------ X -------------------------------------- X ----------------------------------------- X
