@@ -97,3 +97,120 @@
 // let dotindex = str.indexOf(".");
 // let result = str.slice(0 , dotindex) + str.slice(dotindex + 1);
 // document.write("Number: " + str + "<br />" + "Result: " + result);
+
+// Qno:13 Write a program to take user input and store username 
+// in a variable. If the username contains any special symbol 
+// among [@ . , !], prompt the user to enter a valid username. 
+
+// Note:
+// ASCII code of ! is 33
+// ASCII code of , is 44
+// ASCII code of . is 46
+// ASCII code of @ is 64
+//ans;
+// let userName = prompt("Enter your name");
+// for (let i = 0; i < userName.length; i++) {
+// if (userName.charCodeAt(i) == 33 || userName.charCodeAt(i) == 44 || userName.charCodeAt(i) == 46 || userName.charCodeAt(i) == 64) {
+//   alert("please enter a valid username");
+// }
+// }
+
+// Qno:14 You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an 
+// array. After searching, prompt the user whether the given 
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user 
+// enters cookie, Cookie, COOKIE or coOkIE, program 
+// should inform about its availability.
+//ans;
+// let A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// alert("Welcome to our bakery sir/ma'am");
+// let saylaniBakery = prompt("What you wanna order sir/ma'am").toLowerCase();
+// let checkout = false
+
+// for (let i = 0; i<A.length; i++){
+//    if(saylaniBakery == A[i]){
+//     document.write(saylaniBakery + " is available at index " + i + " in our bakery!!!");
+//     checkout = true;
+//    }
+// }
+
+// if(checkout === false){
+// document.write("We are sorry. " + saylaniBakery + " is not available in our bakery!!1");
+// }
+
+// Qno:15 Write a program to take password as an input from 
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document.
+//ans;
+// let password = prompt("Enter your passward");
+// if (password.length < 6) {
+//     alert("password must be at least 6 characters long");
+// }
+// else if (password.charCodeAt(0) >= 48 && password.charCodeAt(0) <= 57) {
+//     alert("password should not start with number");
+// }
+
+// let haveNumber = false;
+// let haveLetter = false;
+
+// for (i = 0; i < password.length; i++) {
+//     let charcode = password.charCodeAt(i);
+
+//     if (charcode >= 65 && charcode <= 90 || charcode >= 97 && charcode <= 122) {
+//         haveLetter = true
+//     }
+
+//     else if (charcode >= 49 && charcode <= 57) {
+//         haveNumber = true;
+//     }
+// }
+
+// if (haveLetter && haveNumber) {
+//     alert("Password accepted!")
+// }
+// else {
+//     alert("Password should contain both numbers and letters \n Please enter a valid password");
+// }
+
+// Qno:16 Write a program to convert the following string to an 
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser
+//ans;
+
+// let university = "University of Karachi";
+// let universityArray = university.split("");
+// for(let i = 0; i < universityArray.length; i++){
+// document.write(universityArray[i] + "<br />");
+// }
+
+// Qno:17 Write a program to display the last character of a user 
+// input.
+//ans;-
+// let userInput = "pakistan"
+// let result = userInput.charAt(7);
+// document.write("User input is: Pakistan" + "<br />" + " last charcter of input: " + result )
+
+// Qno:18 You have a string “The quick brown fox jumps over the 
+// lazy dog”. Write a program to count number of 
+// occurrences of word “the” in given string.
+//ans;
+// let statement = "The quick brown fox jumps over the lazy dog";
+// statement = statement.toLowerCase();
+// let count = 0;
+
+// for (let i = 0; i < statement.length; i++) {
+//     if (statement.slice(i, i + 3) === "the") {
+//         count++;
+//     }
+// }
+
+// document.write("Text: The quick brown fox jumps over the lazy dog" + "<br />" + "There are " + count + " occurence(s) of the word 'the'");
